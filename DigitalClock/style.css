@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#clock_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 40px;
+    border: 5px solid whitesmoke;
+    background-color: black;
+    color: aliceblue;
+    
+}
+
+#hour_section, #minutes_section, #seconds_section{
+    border: 3px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 200px;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: cornsilk;
+    color: purple;
+}
+
+#hourValue, #minValue, #secValue{
+    font-size: 40px;
+}
