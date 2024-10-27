@@ -1,0 +1,234 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0a0a;
+    display: flex;
+    flex-direction: column;
+    color: #fff; 
+    font-size: large;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2rem 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(15, 10, 10, 0.8);
+    color: #fff; 
+}
+
+.sticky {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.navbar a {
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #fff; 
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #1adafc;
+}
+
+/* Section Styles */
+
+section {
+    padding: 15rem 9% 2rem;
+    min-height: calc(100vh - 80px);
+    background-color: #0f0a0a;
+    color: #fff; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-content {
+    max-width: 70rem;
+}
+
+.text-content h1 {
+    font-size: 4rem;
+    color: #1adafc;
+}
+
+.text-animation h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: transparent; 
+    background: linear-gradient(to right, #1adafc, #00ffcc);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text; 
+}
+
+.text-content p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.btn-section .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #1adafc;
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-section .btn:hover {
+    background-color: #00ffcc;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1adafc; 
+}
+
+.start-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.start-animation-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Education Section Styles */
+
+.education .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.column {
+    flex: 1;
+}
+
+.education-content {
+    background-color: #222; 
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+/* Skills Section Styles */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.skills-category {
+    background-color: #222; 
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+/* Projects, Certifications, Volunteer Experience Styles */
+
+.projects ul,
+.certifications ul,
+.volunteer-experience ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.projects li,
+.certifications li,
+.volunteer-experience li {
+    background-color: #222; 
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+/* Contact Section Styles */
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-box input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+.contact textarea {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+.contact .btn {
+    margin-top: 1rem;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #0f0a0a;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media i {
+    margin: 0 1rem;
+    color: #1adafc; 
+}
